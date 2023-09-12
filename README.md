@@ -85,17 +85,22 @@ _Find awesome badges for your project in this repository: [markdown-badges](http
 -   [Best Practices](#best-practices)
 -   [Influences](#influences)
 -   [What's Next?](#whats-next)
+-   [Sponsors](#sponsors)
 -   [Leaderboard](#leaderboard)
 -   [Creating New Tasks](#creating-new-tasks)
 -   [Contact](#contact)
 -   [License](#license)
 -   [List of Contibutors](#list-of-contributors)
 
+![line]
+
 ## Quick Start
 
 1. Go to [Setup Instructions](#setup-instructions) and follow the instructions about how to start working with the project.
 1. Go to [Tasks](#tasks) and choose a task you want to work on. You can find instructions for installing the required tools for each task in [Prerequisites](#prerequisites).
 1. Go to [Submitting Your Changes](#submitting-your-changes) and follow the instructions about how to submit your changes.
+
+![line]
 
 ## Prerequisites
 
@@ -152,7 +157,7 @@ Also:
 -   For Bash related issues, you need to install [Bash](#installing-bash).
 -   For Perl related issues, you need to install [Perl](#installing-perl).
 
-![line]
+---
 
 ### Installing an IDE
 
@@ -172,7 +177,7 @@ We recommend using VS Code as your IDE for this project. It's free, open-source,
 
 Instructions of how to install an IDE that suits for you can be found in our website at [forkcommitmerge.io/ide](https://forkcommitmerge.io/ide)!
 
-![line]
+---
 
 ### Installing Git
 
@@ -211,6 +216,7 @@ CoffeeScript is a programming language that transcompiles to JavaScript. It adds
 First you have to make sure you have [Node.js and NPM](#installing-nodejs-and-npm) installed.
 
 Install CoffeeScript with this command:
+
 ```bash
 npm install --global coffeescript
 ```
@@ -365,6 +371,7 @@ For Windows and macOS, you can download the DMD (D Compiler) from the [official 
 For Linux you can use your package manager, for example in Arch Linux you can install DMD with `sudo pacman -S dmd`.
 
 VS Code Setup:
+
 -   Open VS Code and go to Extensions (or press Ctrl+Shift+X).
 -   Search for "D Programming Language (code-d)" and install it. This will add D language support in VS Code.
 
@@ -541,12 +548,14 @@ virtualenv vyper-env
 
 Activate the virtual environment:
 
-*On macOS and Linux:*
+_On macOS and Linux:_
+
 ```bash
 source vyper-env/bin/activate
 ```
 
-*On Windows:*
+_On Windows:_
+
 ```bash
 .\vyper-env\Scripts\activate
 ```
@@ -720,6 +729,7 @@ Installing Flutter requires also installing Dart, which you can either install s
 However, you can also install Flutter without installing Android Studio or Xcode, but you'll need to install the Android SDK and iOS SDK separately.
 
 Install Flutter and Dart Plugins in VS Code:
+
 -   Open VS Code and go to Extensions (Ctrl+Shift+X).
 -   Search for "Flutter" and install it.
 -   The Dart plugin will be automatically installed along with Flutter.
@@ -952,6 +962,7 @@ sudo apt-get install gnu-smalltalk
 ```
 
 In Arch Linux you can download Smalltalk packages from AUR repositories. For example, you can use Yay:
+
 ```bash
 yay -S smalltalk
 ```
@@ -994,6 +1005,7 @@ Setting up VS Code extension:
 ### Installing R
 
 Windows:
+
 -   Download R from [CRAN](https://cran.r-project.org/mirrors.html) and install it.
 -   Download [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and install it.
 -   Add R and Rtools to your system PATH.
@@ -1003,9 +1015,11 @@ macOS:
 -   You can install R using [Homebrew](https://brew.sh/): `brew install R`.
 
 Linux:
+
 -   Use your package manager to install R. For example, on Ubuntu: `sudo apt-get install r-base` and on Arch: `sudo pacman -S r`.
 
 Setting up VS Code extension:
+
 -   Open the Extensions view (Ctrl+Shift+X).
 -   Search for `R` and install the R extension provided by "REditorSupport".
 
@@ -1076,7 +1090,19 @@ Setting up VS Code for Perl:
 ## Setup Instructions
 
 1. Fork this repository by clicking on the "Fork" button at the top-right corner of this page. This creates a copy of the repository in your GitHub account.
-2. Clone your forked repository to your local machine with the command:
+
+![Fork](/assets/images/fork-button.png)
+
+2. Clone your forked repository by clicking the "Code" button:
+
+![Code](/assets/images/code.png)
+
+That will open this small window:
+
+![Clone](/assets/images/clone.png)
+
+After that you can copy and paste the URL the to your local machine with the command:
+
 ```bash
 git clone https://github.com/<your-username>/fork-commit-merge.git
 ```
@@ -1084,16 +1110,21 @@ git clone https://github.com/<your-username>/fork-commit-merge.git
 Replace 'your-username' with your GitHub username.
 
 3. Navigate to your project folder:
+
 ```bash
 cd fork-commit-merge
 ```
 
 4. Add a reference to the original repository for future updates:
+
 ```bash
 git remote add upstream https://github.com/nikohoffren/fork-commit-merge.git
 ```
 
+(Remember to keep here the original repository URL, not your forked one, so the username in this needs to be `nikohoffren`.)
+
 5. Check the remotes for this repository:
+
 ```bash
 git remote -v
 ```
@@ -1101,6 +1132,7 @@ git remote -v
 You should now see the origin and upstream remotes listed.
 
 6. Take a pull from the upstream repository to your main branch to keep it at par with the main project:
+
 ```bash
 git pull upstream main
 ```
@@ -1116,11 +1148,11 @@ Remember every once in a while to pull from the upstream repository to keep your
 
 If you are not familiar about the contribution process, you can check out some useful videos in our website's Resources section: [forkcommitmerge.io/resources](https://forkcommitmerge.io/resources).
 
-*Note: We recommend to always create new branch with each Issue you solve! Otherwise the pull requests will get too large and there could be possible merge conflicts.*
+_Note: We recommend to always create new branch with each Issue you solve! Otherwise the pull requests will get too large and there could be possible merge conflicts._
 
 ## Tasks
 
-We present over 60 several tasks for different languages, libraries and frameworks with varying difficulty.
+We present over 70 several tasks for different languages, libraries and frameworks with varying difficulty.
 Firstly, open the `tasks` directory and select which language you want to work with by opening one of the following directories:
 
 -   HTML
@@ -1363,9 +1395,11 @@ git push origin fix-issue
 
 Once you've pushed your changes to GitHub, you're ready to create a pull request. Go to your forked repository on GitHub.
 
--   You should see text "fork-commit-merge had recent pushes" and button "Compare & Pull request" next to it.
+-   You should see text "fix-issue had recent pushes" (or whatever your branch name is) and button "Compare & pull request" next to it.
 
--   Click the "Compare & Pull request" button to proceed to the pull request page of the original fork-commit-merge repository.
+![Compare & Pull request](/assets/images/compare-and-pull-request.png)
+
+-   Click the "Compare & pull request" button to proceed to the pull request page of the original fork-commit-merge repository.
 
 -   Fill in the title and description boxes to inform what you did in the task and how you got it to work. You can also add some additional information such as screenshots, if you want or if they are required in the task description.
 
@@ -1374,6 +1408,8 @@ Once you've pushed your changes to GitHub, you're ready to create a pull request
 Congratulations on making your first open source contribution on GitHub!
 
 Sit back and wait for a response and feedback of the pull request. If everything is working fine, you should get the pull request merged. If not, you will be requested to do some changes to your code.
+
+Remember to wait for us to review your pull request, do not close it yourself.
 
 After the merge, actions-user bot will reset the files for the next contributor.
 
@@ -1412,6 +1448,8 @@ This project was inspired by a number of fantastic resources designed to help ne
 
 I highly recommend checking out these projects if you want to learn more about contributing to open source!
 
+![line]
+
 ## What's Next?
 
 Congratulations on making your first open source contribution! If you're looking for more ways to contribute, you are also welcome to work with the Fork, Commit, Merge website repo, which is located [here](https://github.com/nikohoffren/fork-commit-merge-web). The website is built with React, NextJS, TypeScript, TailwindCSS, MongoDB Atlas and Github OAuth/API. So if you are interested of those technologies, you can contribute to the website repo by creating new features, fixing bugs or improving the code quality.
@@ -1420,22 +1458,44 @@ You can also check out more information about how to make open source contributi
 
 Also i would really appreciate if you could leave a star, so more developers can find this project. I look forward to seeing your contributions!
 
+![line]
+
+## Sponsors
+
+You can sponsor this project by clicking the "Sponsor" button at the top of this page.
+
+![Sponsor](/assets/images/sponsor.png)
+
+Your sponsorship will help me to keep this project alive and to continue developing it further. You will also get your name and/or logo listed in our website at [forkcommitmerge.io](https://forkcommitmerge.io) as well as in this repository.
+
+You can also support me by buying me a coffee at [buymeacoffee.com/nikohoffren](https://www.buymeacoffee.com/nikohoffren) or clicking the "Buy me a coffee" button at the header of our [website](https://forkcommitmerge.io).
+
+![line]
+
 ## Leaderboard
 
 You can find the leaderboard of the Top 20 contributors in our website at [forkcommitmerge.io/leaderboard](https://forkcommitmerge.io/leaderboard).
 You can also find your own contribution history for this project in the website, if you [login](https://forkcommitmerge.io/login) with your Github account.
 
+![line]
+
 ## Creating New Tasks
 
-Feel free to contribute to this project also by creating new tasks for other contributors to tackle. To do so, please submit a pull request containing detailed information about the task, such as level of difficulty, language/library/framework or other technology, and relevant code examples. We encourage you to propose tasks across the programming languages already represented in our project, as this helps broaden its versatility and accessibility for developers worldwide.
+Feel free to contribute to this project also by creating new tasks for other contributors to tackle. To do so, please submit a pull request containing detailed information about the task, such as level of difficulty, language/library/framework or other technology, and relevant code examples. We encourage you to propose tasks across all different programming languages, libraries, frameworks and other technologies in the world.
+
+![line]
 
 ## Contact
 
 For any queries, feel free to open an issue or reach out to me at niko.hoffren@gmail.com.
 
+![line]
+
 ## License
 
 This project is licensed under the terms of the [MIT License](LICENSE).
+
+![line]
 
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 
@@ -1649,3 +1709,6 @@ Massive thanks to all of the these fine individuals who contributed to this proj
 <a href="https://github.com/CodeWithUmair"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/91899494?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/VIDYA1980"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/91894737?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/Utkarsh3128"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/88283012?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+<a href="https://github.com/xikaojr"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/2422719?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+<a href="https://github.com/vishal-phoenix"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/100995024?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+<a href="https://github.com/ignaszd"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/61277691?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
